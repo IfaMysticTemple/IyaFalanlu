@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="color-scheme" content="dark" />
+  <title>Ifá Mystic Storage — SwamiG Institute</title>
+  <meta name="description" content="Central storage for Ifá / Isésé / Orisha study materials — audio, PDFs, images, and initiation resources." />
+  <link rel="icon" href="OsaOturaLogo1.png" />
+  <style>
+    :root{
+      --bg:#0b0b0f;--ink:#eaeaf2;--muted:#b5b5c4;
+      --accent:#bb66ff;--accent-2:#66ffd1;--radius:18px;
+    }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b0b0f;color:var(--ink)}
+    a{color:var(--accent-2);text-decoration:none}
+    .wrap{max-width:1080px;margin:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    header img{width:80px;border-radius:50%}
+    .hero{margin-top:30px;background:#111219;border-radius:var(--radius);padding:24px}
+    h1{font-size:26px;margin:0}
+    h2{margin-top:30px;font-size:22px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .item{background:#15151b;border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:14px}
+    .actions{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
+    .btn{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:10px;font-size:14px}
+    footer{margin:40px 0 10px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="SwamiG.gif" alt="SwamiG Logo">
+        <div>
+          <h1>Ifá Mystic Storage</h1>
+          <small>SwamiG Institute — 70-888-SWAMI</small>
+        </div>
+      </div>
+      <div><a href="mailto:IfaMysticTemple@gmail.com">IfaMysticTemple@gmail.com</a></div>
+    </header>
+
+    <section class="hero">
+      <p>Welcome to the Ifá Mystic Storage — the secure archive for <b>audio teachings, PDFs, and images</b> used by SwamiG Institute and Ifa Mystic Temple. All files are stored in this repository for easy access and version control.</p>
+    </section>
+
+    <h2 id="audio">Audio Library</h2>
+    <div class="grid">
+      <div class="item"><h4>01 • Opening Prayer</h4><audio controls src="clip01-opening-prayer.mp3"></audio></div>
+      <div class="item"><h4>02 • Orientation to Study</h4><audio controls src="clip02-orientation.mp3"></audio></div>
+      <div class="item"><h4>03 • Asking Good Questions</h4><audio controls src="clip03-asking-questions.mp3"></audio></div>
+      <div class="item"><h4>04 • Casting Basics</h4><audio controls src="clip04-casting-basics.mp3"></audio></div>
+      <div class="item"><h4>05 • Reading Responses</h4><audio controls src="clip05-reading-responses.mp3"></audio></div>
+      <div class="item"><h4>06 • Ethical Practice</h4><audio controls src="clip06-ethics.mp3"></audio></div>
+      <div class="item"><h4>07 • Herbal Oracle Primer</h4><audio controls src="clip07-herbal-oracle.mp3"></audio></div>
+      <div class="item"><h4>08 • Obi-Pele Overview</h4><audio controls src="clip08-obi-pele.mp3"></audio></div>
+      <div class="item"><h4>09 • Merindilogun Practice</h4><audio controls src="clip09-merindilogun.mp3"></audio></div>
+      <div class="item"><h4>10 • Closing Prayer & Charge</h4><audio controls src="clip10-closing-prayer.mp3"></audio></div>
+    </div>
+
+    <h2 id="pdfs">PDF Vault</h2>
+    <div class="grid">
+      <div class="item">
+        <h4>Ifá Mystic Starter Guide</h4>
+        <div class="actions">
+          <a class="btn" href="ifa-mystic-starter.pdf" target="_blank">Open</a>
+          <a class="btn" href="ifa-mystic-starter.pdf" download>Download</a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>On the Mat with Opele</h4>
+        <div class="actions">
+          <a class="btn" href="opele-on-the-mat-assignment.pdf" target="_blank">Open</a>
+          <a class="btn" href="opele-on-the-mat-assignment.pdf" download>Download</a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>Merindilogun Certificate Template</h4>
+        <div class="actions">
+          <a class="btn" href="merindilogun-certificate-template.pdf" target="_blank">Open</a>
+          <a class="btn" href="merindilogun-certificate-template.pdf" download>Download</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="images">Image Sets</h2>
+    <div class="grid">
+      <div class="item"><h4>Herbal Oracle Sheet</h4><a class="btn" href="herbal-oracle-14.png" target="_blank">View</a></div>
+      <div class="item"><h4>Khemti Tree of Life</h4><a class="btn" href="khemti-tree-of-life.png" target="_blank">View</a></div>
+      <div class="item"><h4>Anke-Karade Crest</h4><a class="btn" href="anke-karade-crest.png" target="_blank">View</a></div>
+    </div>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> SwamiG Institute • Ifa Mystic Temple
+    </footer>
+  </div>
+</body>
+</html>
