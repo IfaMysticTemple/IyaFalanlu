@@ -1,100 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b0b0f" />
-  <meta name="color-scheme" content="dark" />
-  <title>Ifá Mystic Storage — SwamiG Institute</title>
-  <meta name="description" content="Central storage for Ifá / Isésé / Orisha study materials — audio, PDFs, images, and initiation resources." />
-  <link rel="icon" href="OsaOturaLogo1.png" />
-  <style>
-    :root{
-      --bg:#0b0b0f;--ink:#eaeaf2;--muted:#b5b5c4;
-      --accent:#bb66ff;--accent-2:#66ffd1;--radius:18px;
-    }
-    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b0b0f;color:var(--ink)}
-    a{color:var(--accent-2);text-decoration:none}
-    .wrap{max-width:1080px;margin:auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    header img{width:80px;border-radius:50%}
-    .hero{margin-top:30px;background:#111219;border-radius:var(--radius);padding:24px}
-    h1{font-size:26px;margin:0}
-    h2{margin-top:30px;font-size:22px}
-    .grid{display:grid;gap:14px}
-    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
-    .item{background:#15151b;border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:14px}
-    .actions{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
-    .btn{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:10px;font-size:14px}
-    footer{margin:40px 0 10px;text-align:center;color:var(--muted);font-size:13px}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Iya Falanlu — Meditative Teachings & Inner Alignment</title>
+<meta name="description" content="Iya Falanlu • Iyanifa and Oshun Priestess • Meditative Teachings & Inner Alignment" />
+<style>
+  :root{
+    --bg:#fffbe8;
+    --ink:#2b2313;
+    --muted:#5c4b2a;
+    --gold:#d4af37;
+    --green:#2e7d32;
+    --red:#b71c1c;
+  }
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 "Inter",system-ui,sans-serif;}
+  header{max-width:1100px;margin:0 auto;padding:40px 20px;
+         display:flex;flex-wrap:wrap;align-items:center;gap:20px;}
+  header img{width:210px;border-radius:16px;
+             box-shadow:0 0 25px rgba(212,175,55,.45);}
+  header .text{flex:1;min-width:240px;}
+  h1{margin:0;font-size:36px;color:var(--gold);}
+  h2{margin:0;font-size:22px;font-weight:400;color:var(--muted);}
+  .section{max-width:900px;margin:30px auto;padding:0 20px;}
+  h3{color:var(--gold);margin-top:32px;font-size:22px;}
+  p{margin:10px 0;}
+  ul{margin:8px 0 20px 20px;}
+  li{margin:4px 0;}
+  .highlight{color:var(--green);}
+  .warn{color:var(--red);}
+  footer{margin:60px 0 30px;text-align:center;color:var(--muted);
+         border-top:1px solid #e0d8b5;padding-top:20px;font-size:14px;}
+  a{color:var(--green);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div style="display:flex;align-items:center;gap:10px">
-        <img src="SwamiG.gif" alt="SwamiG Logo">
-        <div>
-          <h1>Ifá Mystic Storage</h1>
-          <small>SwamiG Institute — 70-888-SWAMI</small>
-        </div>
-      </div>
-      <div><a href="mailto:IfaMysticTemple@gmail.com">IfaMysticTemple@gmail.com</a></div>
-    </header>
 
-    <section class="hero">
-      <p>Welcome to the Ifá Mystic Storage — the secure archive for <b>audio teachings, PDFs, and images</b> used by SwamiG Institute and Ifa Mystic Temple. All files are stored in this repository for easy access and version control.</p>
-    </section>
-
-    <h2 id="audio">Audio Library</h2>
-    <div class="grid">
-      <div class="item"><h4>01 • Opening Prayer</h4><audio controls src="clip01-opening-prayer.mp3"></audio></div>
-      <div class="item"><h4>02 • Orientation to Study</h4><audio controls src="clip02-orientation.mp3"></audio></div>
-      <div class="item"><h4>03 • Asking Good Questions</h4><audio controls src="clip03-asking-questions.mp3"></audio></div>
-      <div class="item"><h4>04 • Casting Basics</h4><audio controls src="clip04-casting-basics.mp3"></audio></div>
-      <div class="item"><h4>05 • Reading Responses</h4><audio controls src="clip05-reading-responses.mp3"></audio></div>
-      <div class="item"><h4>06 • Ethical Practice</h4><audio controls src="clip06-ethics.mp3"></audio></div>
-      <div class="item"><h4>07 • Herbal Oracle Primer</h4><audio controls src="clip07-herbal-oracle.mp3"></audio></div>
-      <div class="item"><h4>08 • Obi-Pele Overview</h4><audio controls src="clip08-obi-pele.mp3"></audio></div>
-      <div class="item"><h4>09 • Merindilogun Practice</h4><audio controls src="clip09-merindilogun.mp3"></audio></div>
-      <div class="item"><h4>10 • Closing Prayer & Charge</h4><audio controls src="clip10-closing-prayer.mp3"></audio></div>
-    </div>
-
-    <h2 id="pdfs">PDF Vault</h2>
-    <div class="grid">
-      <div class="item">
-        <h4>Ifá Mystic Starter Guide</h4>
-        <div class="actions">
-          <a class="btn" href="ifa-mystic-starter.pdf" target="_blank">Open</a>
-          <a class="btn" href="ifa-mystic-starter.pdf" download>Download</a>
-        </div>
-      </div>
-      <div class="item">
-        <h4>On the Mat with Opele</h4>
-        <div class="actions">
-          <a class="btn" href="opele-on-the-mat-assignment.pdf" target="_blank">Open</a>
-          <a class="btn" href="opele-on-the-mat-assignment.pdf" download>Download</a>
-        </div>
-      </div>
-      <div class="item">
-        <h4>Merindilogun Certificate Template</h4>
-        <div class="actions">
-          <a class="btn" href="merindilogun-certificate-template.pdf" target="_blank">Open</a>
-          <a class="btn" href="merindilogun-certificate-template.pdf" download>Download</a>
-        </div>
-      </div>
-    </div>
-
-    <h2 id="images">Image Sets</h2>
-    <div class="grid">
-      <div class="item"><h4>Herbal Oracle Sheet</h4><a class="btn" href="herbal-oracle-14.png" target="_blank">View</a></div>
-      <div class="item"><h4>Khemti Tree of Life</h4><a class="btn" href="khemti-tree-of-life.png" target="_blank">View</a></div>
-      <div class="item"><h4>Anke-Karade Crest</h4><a class="btn" href="anke-karade-crest.png" target="_blank">View</a></div>
-    </div>
-
-    <footer>
-      © <script>document.write(new Date().getFullYear())</script> SwamiG Institute • Ifa Mystic Temple
-    </footer>
+<header>
+  <!-- Replace "IyaFalanlu.jpg" with your actual filename -->
+  <img src="IyaFalanlu.jpg" alt="Iya Falanlu Portrait">
+  <div class="text">
+    <h1>Iya Falanlu</h1>
+    <h2>Meditative Teachings & Inner Alignment</h2>
+    <p>
+      Iyanifa • High Priestess of Orunmila • Oshun Priestess <br>
+      Master Loctician • Mother • Grandmother
+    </p>
   </div>
+</header>
+
+<section class="section">
+  <h3>🕊️ Invocation</h3>
+  <p>
+    May silence become a sanctuary and the breath a bridge to Ori.  
+    Aṣẹ to the mothers, aṣẹ to the teachers, aṣẹ to the path that returns us to balance.
+  </p>
+
+  <h3>About Iya Falanlu</h3>
+  <p>
+    Iya Falanlu is an Iyanifa and High Priestess of Orunmila, and an Oshun Priestess.  
+    She is also a master loctician, a mother, and a grandmother.  
+    Her path is devotion to alignment with Ori, beauty in discipline, and compassion in service.  
+    Her teachings emphasize contemplative practice, gentle ritual, and the cultivation of inner stillness.
+  </p>
+
+  <h3>Meditative Teachings & Practices</h3>
+  <ul>
+    <li><b>Aligning with Ori</b> — Centering prayer and head alignment.</li>
+    <li><b>Breath of Stillness</b> — Fourfold breath for calm and clarity.</li>
+    <li class="highlight"><b>Eshu Meditation</b> — Opening the crossroads with respect and humility.</li>
+    <li><b>Daily Calm Invocation</b> — A brief morning and evening recitation.</li>
+    <li class="warn"><b>Irosun Ofun Iré Reflection</b> — Writing practice to anchor blessing.</li>
+  </ul>
+
+  <h3>Suggested Practice Rhythm</h3>
+  <p>
+    <b>Morning:</b> Breath of Stillness (5–10 min) → Aligning with Ori (3–5 min)<br>
+    <b>Midday:</b> Short gratitude pause (1–2 min)<br>
+    <b>Evening:</b> Eshu Meditation or Daily Calm Invocation (5–10 min)
+  </p>
+
+  <h3>Audio Teachings Library</h3>
+  <ul>
+    <li><a href="1IyaFalanlu.wav">1 Iya Falanlu .wav</a></li>
+    <li><a href="2IyaFalanlu.wav">2 Iya Falanlu .wav</a></li>
+    <li><a href="2IyaFalanlu_Ori.wav">2 Iya Falanlu Ori .wav</a></li>
+    <li><a href="2bIyaFalanlu_Ori.mp3">2b Iya Falanlu Ori .mp3</a></li>
+    <li><a href="3IyaFalanlu.wav">3 Iya Falanlu .wav</a></li>
+    <li><a href="eshu2.wav">Eshu 2 .wav</a></li>
+    <li><a href="eshu2.mp3">Eshu 2 .mp3</a></li>
+  </ul>
+
+  <h3>🌙 Blessing</h3>
+  <p>
+    May the sound of breath become your teacher. May your steps carry Iré. Aṣẹ.
+  </p>
+</section>
+
+<footer>
+  Hosted quietly by SwamiG Institute² — Extending Royal Legacy  •  Contact: 
+  <a href="mailto:IfaMysticTemple@gmail.com">IfaMysticTemple@gmail.com</a>
+</footer>
+
 </body>
 </html>
