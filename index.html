@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Iya Falanlu — Meditative Teaching & Inner Alignment</title>
 <meta name="description" content="Iya Falanlu • Iyanifa and Oshun Priestess • Meditative Teachings & Inner Alignment" />
+
 <style>
   :root{
     --bg:#fffbe8;
@@ -13,34 +14,216 @@
     --gold:#d4af37;
     --green:#2e7d32;
     --red:#b71c1c;
+
+    --card:#fff7d2;
+    --border:#e0d8b5;
+    --shadow:0 14px 40px rgba(43,35,19,.14);
+    --radius:18px;
+    --max:1100px;
   }
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font:16px/1.6 "Inter",system-ui,sans-serif;}
-  header{max-width:1100px;margin:0 auto;padding:40px 20px;
-         display:flex;flex-wrap:wrap;align-items:center;gap:20px;}
-  header img{width:210px;border-radius:16px;
-             box-shadow:0 0 25px rgba(212,175,55,.45);}
-  header .text{flex:1;min-width:240px;}
-  h1{margin:0;font-size:36px;color:var(--gold);}
-  h2{margin:0;font-size:22px;font-weight:400;color:var(--muted);}
-  .section{max-width:900px;margin:30px auto;padding:0 20px;}
-  h3{color:var(--gold);margin-top:32px;font-size:22px;}
-  p{margin:10px 0;}
-  ul{margin:8px 0 20px 20px;}
-  li{margin:4px 0;}
-  .highlight{color:var(--green);}
-  .warn{color:var(--red);}
-  footer{margin:60px 0 30px;text-align:center;color:var(--muted);
-         border-top:1px solid #e0d8b5;padding-top:20px;font-size:14px;}
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:16px/1.65 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  }
+
   a{color:var(--green);text-decoration:none;}
   a:hover{text-decoration:underline;}
+
+  /* Header */
+  header{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:34px 20px 18px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:20px;
+  }
+
+  .avatar{
+    width:210px;
+    border-radius:16px;
+    box-shadow:0 0 25px rgba(212,175,55,.45);
+    overflow:hidden;
+    background:rgba(212,175,55,.10);
+    border:1px solid rgba(212,175,55,.35);
+  }
+  .avatar img{width:100%;height:auto;display:block}
+
+  header .text{flex:1;min-width:260px;}
+  h1{margin:0;font-size:36px;line-height:1.15;color:var(--gold);}
+  h2{margin:6px 0 0;font-size:20px;font-weight:500;color:var(--muted);}
+  header p{margin:10px 0 0;color:var(--muted)}
+
+  /* Hero Banner */
+  .banner-wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 20px 10px;
+  }
+  .banner{
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(212,175,55,.28);
+    box-shadow:var(--shadow);
+    background:
+      radial-gradient(900px 220px at 15% 20%, rgba(212,175,55,.22), transparent 55%),
+      radial-gradient(900px 260px at 90% 25%, rgba(46,125,50,.18), transparent 60%),
+      rgba(255,247,210,.65);
+  }
+  .banner img{
+    width:100%;
+    height:min(420px, 62vh);
+    object-fit:cover;
+    display:block;
+    filter:saturate(1.05) contrast(1.05);
+  }
+  .banner-cap{
+    padding:14px 16px 16px;
+    border-top:1px solid rgba(224,216,181,.75);
+    color:var(--muted);
+    font-size:14px;
+  }
+  .banner-cap b{color:var(--ink)}
+
+  /* Sections */
+  .section{
+    max-width:900px;
+    margin:26px auto;
+    padding:0 20px;
+  }
+  h3{
+    color:var(--gold);
+    margin:30px 0 10px;
+    font-size:22px;
+    letter-spacing:.2px;
+  }
+  p{margin:10px 0;}
+  ul{margin:8px 0 18px 20px;}
+  li{margin:6px 0;}
+  .highlight{color:var(--green);}
+  .warn{color:var(--red);}
+
+  /* Cards */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    gap:14px;
+    margin-top:12px;
+  }
+  .card{
+    grid-column:span 12;
+    background:linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,247,210,.85));
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:16px 16px 14px;
+  }
+  .card h4{
+    margin:0 0 8px;
+    font-size:18px;
+    color:var(--ink);
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:8px 0 4px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 10px;
+    border-radius:999px;
+    border:1px solid rgba(224,216,181,.95);
+    background:rgba(255,255,255,.45);
+  }
+  .pill b{color:var(--ink)}
+  .callout{
+    margin-top:12px;
+    border-left:4px solid var(--gold);
+    padding:10px 12px;
+    background:rgba(212,175,55,.10);
+    border-radius:12px;
+    color:var(--muted);
+  }
+
+  /* Flyer image */
+  .flyer{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:12px;
+  }
+  .flyer img{
+    width:100%;
+    height:auto;
+    border-radius:16px;
+    border:1px solid rgba(224,216,181,.95);
+    box-shadow:var(--shadow);
+    background:rgba(255,255,255,.35);
+  }
+  .actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 14px;
+    border-radius:14px;
+    border:1px solid rgba(46,125,50,.35);
+    background:rgba(46,125,50,.10);
+    color:var(--green);
+    font-weight:700;
+  }
+  .btn:hover{background:rgba(46,125,50,.16);text-decoration:none;}
+  .btn.gold{
+    border-color:rgba(212,175,55,.55);
+    background:rgba(212,175,55,.14);
+    color:var(--ink);
+  }
+  .btn.gold:hover{background:rgba(212,175,55,.20);}
+  .btn.red{
+    border-color:rgba(183,28,28,.35);
+    background:rgba(183,28,28,.10);
+    color:var(--red);
+  }
+  .btn.red:hover{background:rgba(183,28,28,.16);}
+
+  footer{
+    max-width:900px;
+    margin:54px auto 26px;
+    padding:18px 20px 0;
+    text-align:center;
+    color:var(--muted);
+    border-top:1px solid var(--border);
+    font-size:14px;
+  }
+
+  /* Small note */
+  .tiny{font-size:13px;color:var(--muted)}
 </style>
 </head>
+
 <body>
 
 <header>
-  <!-- Replace "IyaFalanlu.jpg" with your actual filename -->
-  <img src="IyaFalanlu.jpeg" width="140" height="200" alt="" title="" />
+  <!-- All in same repo: put your portrait file in the same folder as this HTML -->
+  <!-- If your file is named differently, change it here -->
+  <div class="avatar">
+    <img src="IyaFalanlu.jpeg" alt="Iya Falanlu portrait" loading="lazy" />
+  </div>
+
   <div class="text">
     <h1>Iya Falanlu</h1>
     <h2>Meditative Teachings & Inner Alignment</h2>
@@ -51,18 +234,66 @@
   </div>
 </header>
 
+
 <section class="section">
-  <h3> Invocation</h3>
+  <h3>Invocation</h3>
   <p>
-    May silence become a sanctuary and the breath a bridge to Ori.  
+    May silence become a sanctuary and the breath a bridge to Ori.
     Ase to the mothers, ase to the teachers, ase to the path that returns us to balance.
   </p>
 
+  <!-- NEW: Iyaami memorial gathering (verbiage + flyer image) -->
+  <h3>Offering & Memorial Gathering</h3>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Alaafia Everyone</h4>
+      <p>
+        In honor of the <b>Iyaami</b>, our divine feminine and primordial Mothers, it is requested that you attend
+        this gathering of offering and memorial in remembrance of the <b>72 fallen turkey vultures</b>.
+      </p>
+
+      <div class="meta">
+        <span class="pill"><b>December 27, 2025</b> • <span>9:00 AM</span></span>
+        <span class="pill"><b>Mt Airy Arboretum</b> • <span>5100 Arboretum Rd, 45223</span></span>
+      </div>
+
+      <div class="callout">
+        <b>Please bring:</b> white flowers and eggs. We will place an egg to represent each bird (72).<br>
+        <b>Also bring:</b> chicken livers, bananas (at least 3 per person).<br>
+        <span class="warn"><b>Please wear WHITE.</b></span>
+      </div>
+
+      <p style="margin-top:12px;">
+        <em>“Kitori eniti oba mo oruko yin egbodo pa a je!”</em><br>
+        <b>Whosoever knows the names of the divine Mothers will be blessed. Ase!</b>
+      </p>
+
+      <div class="actions">
+       <a class="btn" href="tel:1513477444two">Call Iya Falanlu • (513) 477-444two</a>
+      </div>
+
+      <p class="tiny" style="margin-top:10px;">— Iya Falanlu</p>
+    </div>
+
+    <div class="card flyer">
+      <!-- Add raven2.jpg to the same repo folder as this HTML -->
+      <img src="raven2.jpg" alt="Event invitation flyer" loading="lazy" />
+      <div class="tiny">
+        Flyer image included for easy sharing (same wording as above).
+      </div>
+      <div class="actions">
+        <a class="btn" href="raven2.jpg" download>Download Flyer</a>
+        <a class="btn red" href="sms:+15134774442?&body=Alaafia%20Iya%20Falanlu%20—%20I%20plan%20to%20attend%20the%20Iyaami%20memorial%20Dec%2027%20at%209am%20at%20Mt%20Airy%20Arboretum.">Text RSVP</a>
+      </div>
+    </div>
+  </div>
+
   <h3>About Iya Falanlu</h3>
   <p>
-    Iya Falanlu is an Iyanifa and High Priestess of Orunmila, and an Oshun Priestess.  
-    She is also a master loctician, a mother, and a grandmother.  
-    Her path is devotion to alignment with Ori, beauty in discipline, and compassion in service.  
+    Iya Falanlu is an Iyanifa and High Priestess of Orunmila, and an Oshun Priestess.
+    She is also a master loctician, a mother, and a grandmother.
+    Her path is devotion to alignment with Ori, beauty in discipline, and compassion in service.
     Her teachings emphasize contemplative practice, gentle ritual, and the cultivation of inner stillness.
   </p>
 
@@ -77,28 +308,29 @@
 
   <h3>Suggested Practice Rhythm</h3>
   <p>
-    <b>Morning:</b> Breath of Stillness (5–10 min)  Aligning with Ori (3–5 min)<br>
+    <b>Morning:</b> Breath of Stillness (5–10 min) • Aligning with Ori (3–5 min)<br>
     <b>Midday:</b> Short gratitude pause (1–2 min)<br>
     <b>Evening:</b> Eshu Meditation or Daily Calm Invocation (5–10 min)
   </p>
 
   <h3>Audio Teachings Library</h3>
   <ul>
-    <li><a href="1IyaFalanlu.wav">1 Iya Falanlu- Souls Pendulumn .wav</a></li>
-    <li><a href="2IyaFalanlu.wav">2 Iya Falanlu- Wa-TeeTee-Wa .wav</a></li>
-    <li><a href="2bIyaFalanlu_Ori.mp3">2 Iya Falanlu Ori .wav</a></li>
-    <li><a href="3IyaFalanlu.wav">3 Iya Falanlu-What Time? .wav</a></li>
+    <li><a href="1IyaFalanlu.wav">1 Iya Falanlu — Souls Pendulumn (.wav)</a></li>
+    <li><a href="2IyaFalanlu.wav">2 Iya Falanlu — Wa-TeeTee-Wa (.wav)</a></li>
+    <li><a href="2bIyaFalanlu_Ori.mp3">2b Iya Falanlu — Ori (.mp3)</a></li>
+    <li><a href="3IyaFalanlu.wav">3 Iya Falanlu — What Time? (.wav)</a></li>
   </ul>
 
-  <h3> Blessing</h3>
+  <h3>Blessing</h3>
   <p>
     May the sound of breath become your teacher. May your steps carry Iré. Ase.
   </p>
 </section>
 
 <footer>
-  Hosted quietly by SwamiG Institute² — Extending Royal Legacy  •  Contact: 
-  <a href="mailto:IfaMysticTemple@gmail.com">IfaMysticTemple@gmail.com</a>
+  Hosted quietly by <a href="https://swamiginstitute.com" target="_blank" rel="noopener">SwamiG Institute</a>²
+  — Enlightenment Lessons for the Diaspora • Contact:
+  Baba@swamiGinstitute.com
 </footer>
 
 </body>
