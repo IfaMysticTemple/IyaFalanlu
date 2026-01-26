@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SGI Priest Cycle — Four Cowrie Shell+ (Lesson 3.0)</title>
+
+<style>
+:root{
+  --bg:#0b0b0f; --ink:#f3f4f6; --muted:#bfc3d1;
+  --accent:#bb66ff; --accent2:#ffd166; --border:rgba(255,255,255,.14);
+}
+body{
+  margin:0; font:16px/1.6 Inter,system-ui;
+  background:var(--bg); color:var(--ink);
+}
+.wrap{max-width:900px;margin:auto;padding:28px}
+header{
+  display:flex;align-items:center;gap:16px;
+  border-bottom:1px solid var(--border);
+  padding-bottom:14px;
+}
+header img{height:52px}
+.badge{
+  background:rgba(187,102,255,.18);
+  padding:6px 14px;border-radius:999px;
+  font-weight:700;
+}
+.priest{
+  margin:18px 0;
+  background:#3b0a0a;
+  color:#ffd6d6;
+  padding:14px 18px;
+  border-radius:14px;
+}
+.card{
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:18px;
+  margin-top:18px;
+  background:rgba(255,255,255,.03);
+}
+ul{margin:0;padding-left:22px}
+li{margin:10px 0}
+a{color:var(--accent2);text-decoration:none;font-weight:600}
+a:hover{text-decoration:underline}
+button{
+  background:var(--accent);
+  color:#000;border:none;
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:700;
+  cursor:pointer;
+}
+footer{
+  margin-top:28px;
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <img src="SwamiG.gif" alt="SwamiG Institute Logo">
+  <div class="badge">Priest Track • Lesson 3.0</div>
+</header>
+
+<div class="priest">
+<b>PRIEST-ONLY MATERIAL.</b><br>
+Restricted to consecrated practitioners authorized to work with
+Four Cowrie Shell+ systems and Odu recursion beyond novice levels.
+</div>
+
+<div class="card">
+<h2>7-Day Practice Cycle — From 4 Cowries to the Gate of 256</h2>
+<p class="small">
+This cycle precedes formal 256-Odu expansion and establishes
+orientation, direction, and line logic within the Four Cowrie Shell+ system.
+</p>
+
+<ul>
+  <li><a href="day1.html">Day 1 — Orientation: Entering the Casting Space</a></li>
+  <li><a href="day2.html">Day 2 — Cowrie Orientation: Earthward & Skyward</a></li>
+  <li><a href="day3.html">Day 3 — Direction: How the Cowrie Speaks</a></li>
+  <li><a href="day4.html">Day 4 — First Leg of the Odu</a></li>
+  <li><a href="day5.html">Day 5 — Second Leg & Directional Refinement</a></li>
+  <li><a href="day6.html">Day 6 — From Pattern to Meaning</a></li>
+  <li><a href="day7.html">Day 7 — Integration: Standing at the Gate of 256</a></li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Completion Affirmation</h3>
+<p>
+Completion of this cycle affirms readiness for supervised
+Odu recursion work and controlled 256-Odu expansion.
+</p>
+
+<button onclick="complete()">Mark Cycle Complete</button>
+<p id="status" style="margin-top:10px;font-weight:700"></p>
+</div>
+
+<footer>
+© SwamiG Institute • Four Cowrie Shell+ • Priest Track
+</footer>
+
+</div>
+
+<script>
+function complete(){
+  localStorage.setItem('sgi_lesson3_priest_complete','yes');
+  document.getElementById('status').innerText =
+    '✔ Completion recorded on this device';
+}
+if(localStorage.getItem('sgi_lesson3_priest_complete')==='yes'){
+  document.getElementById('status').innerText =
+    '✔ Cycle previously completed on this device';
+}
+</script>
+
+</body>
+</html>
